@@ -8,6 +8,25 @@
       content="A beginner HTML website with examples of text, links, lists, tables, and forms."
     />
     <title>My First HTML Page</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: #464feb;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      tr th,
+      tr td {
+        border: 1px solid #e6e6e6;
+      }
+
+      tr th {
+        background-color: #f5f5f5;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -81,7 +100,23 @@
       </section>
       <section id="contact">
         <h2>Contact me</h2>
-        <form action="process.php" method="post">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="01123832-d20c-4eab-a6c6-7d4f5aba2eb1
+          <input
+            type="hidden"
+            name="subject"
+            value="New message from My First HTML Page"
+          />
+          <input type="hidden" name="from_name" value="My First HTML Page" />
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://kameldiana1720-bot.github.io/my-html-website/thank-you.html"
+          />
+          <input type="checkbox" name="botcheck" style="display: none" />
           <p>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
