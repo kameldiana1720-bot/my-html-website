@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A beginner HTML website with examples of text, links, lists, tables, and forms."
+    />
+    <title>My First HTML Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>My First Step</h1>
+      <p>I am learning how to build websites with HTML.</p>
+      <img
+        src="https://placehold.co/800x450?text=Learning+HTML"
+        alt="A placeholder banner that says Learning HTML"
+        width="800"
+      />
+      <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="about.html">About Page</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About This Course</h2>
+        <p>HTML gives <strong>structure</strong> to every web page.</p>
+        <p>We will learn every step, one at a time.</p>
+        <p>HTML<br />CSS<br />JavaScript</p>
+      </section>
+
+      <section>
+        <h2>Topics We Will Cover</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>My Learning Steps</h2>
+        <ol>
+          <li>Write the HTML</li>
+          <li>Save the file</li>
+          <li>Check the page in the browser</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Technology Overview</h2>
+        <table>
+          <caption>
+            Core web technologies
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Technology</th>
+              <th scope="col">Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Structures the content</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Styles the page</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Adds interactivity</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="contact">
+        <h2>Contact me</h2>
+        <form action="process.php" method="post">
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+          <p>
+            <label for="topic">Topic:</label>
+            <select id="topic" name="topic" required>
+              <option value="">Choose a topic</option>
+              <option value="html">HTML</option>
+              <option value="website">Website feedback</option>
+            </select>
+          </p>
+          <p>
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </p>
+          <p>
+            <input type="checkbox" id="updates" name="updates" value="yes" />
+            <label for="updates">Send me website updates</label>
+          </p>
+          <button type="submit">Send message</button>
+        </form>
+      </section>
+
+      <p>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Read the MDN HTML guide</a
+        >
+      </p>
+    </main>
+    <footer>
+      <p>Build while learning HTML.</p>
+    </footer>
+  </body>
+</html>
